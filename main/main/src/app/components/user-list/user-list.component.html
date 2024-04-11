@@ -1,0 +1,15 @@
+<div class="table-responsive">
+
+    <div class="user-table">
+      <input type=" search" placeholder="Search" (keyup)="onKeyUp($event)" >
+      <div class="user-row user-header">
+        <div class="user-cell"><strong>Name</strong></div>
+        <div class="user-cell"><strong>Username</strong></div>
+      </div>
+      <div *ngFor="let user of filteredUsers" class="user-row" (click)="userDetails(user)">
+        <div class="user-cell">{{ user.name }}</div>
+        <div class="user-cell">{{ user.username }}</div>
+      </div>
+    </div>
+  </div>
+  

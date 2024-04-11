@@ -1,0 +1,50 @@
+.user-table {
+    display: table;
+    width: 100%;
+  }
+  
+  .user-row {
+    display: table-row;
+  }
+  
+  .user-header {
+    font-weight: bold;
+    background-color: #f0f0f0;
+  }
+  
+  .user-cell {
+    display: table-cell;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .user-cell:first-child {
+    border-left: 1px solid #ccc;
+  }
+  
+  .user-cell:last-child {
+    border-right: 1px solid #ccc;
+  }
+  
+  .table-responsive {
+    overflow-x: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .user-table {
+      display: block;
+    }
+    
+    .user-row {
+      display: block;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    
+    .user-cell {
+      display: block;
+      padding: 8px;
+    }
+  }
+  
